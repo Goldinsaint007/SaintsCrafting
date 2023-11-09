@@ -1,0 +1,146 @@
+module SaintsRopes {
+	imports {
+		Base, newitems
+	}
+
+	/*	Tier 0 */
+	recipe Rip Fabric {
+		destroy DishCloth,
+
+		Result:RippedSheets = 2,
+		Sound:ClothesRipping,
+		OnGiveXP:Recipe.OnGiveXP.RipFabric,
+		Time:75.0,
+		AnimNode:RipSheets,
+	}
+
+	recipe Craft Sheet Rope {
+		RippedSheets = 3,
+
+		Result:SheetRope,
+		OnGiveXP:Recipe.OnGiveXP.RopeCraft,
+		Time:90.0,
+	}
+
+	/*	Tier 1 */
+	recipe Tie Bundle Of Ripped Sheets {
+		SheetRope = 1,
+		RippedSheets = 12,
+
+		SkillRequired:Tailoring=1,
+		Result:TinyBundleOfRippedSheets,
+		Time:55.0,
+	}
+
+	recipe Untie Bundle Of Ripped Sheets {
+		TinyBundleOfRippedSheets = 1,
+
+		SkillRequired:Tailoring=1,
+		Result:RippedSheets = 12,
+		OnCreate:Recipe.OnCreate.UnbundleRippedSheets,
+		Time:45.0,
+	}
+
+	recipe Craft Sheet Rope {
+		Water=3,
+		RippedSheetsDirty = 3,
+
+		SkillRequired:Tailoring=1,
+		Result:SheetRope,
+		OnGiveXP:Recipe.OnGiveXP.RopeCraft,
+		Time:120.0,
+	}
+
+	recipe Craft Sheet Rope {
+		AlcoholRippedSheets = 3,
+
+		SkillRequired:Tailoring=1,
+		Result:SheetRope,
+		OnGiveXP:Recipe.OnGiveXP.RopeCraft,
+		Time:120.0,
+	}
+
+	/* Tier 2 */
+	recipe Tie Bundle Of Ripped Sheets {
+		ShortRope = 1,
+		RippedSheets = 60,
+
+		SkillRequired:Tailoring=2,
+		Result:SmallBundleOfRippedSheets,
+		Time:70.0,
+	}
+
+	recipe Untie Bundle Of Ripped Sheets {
+		SmallBundleOfRippedSheets = 1,
+
+		SkillRequired:Tailoring=2,
+		Result:RippedSheets = 60,
+		OnCreate:Recipe.OnCreate.UnbundleRippedSheets,
+		Time:60.0,
+	}
+
+	recipe Craft Short Rope {
+		SheetRope = 2,
+
+		SkillRequired:Tailoring=2,
+		Result: ShortRope,
+		OnGiveXP:Recipe.OnGiveXP.RopeCraft,
+		Time: 120.0,
+	}
+
+	/* Tier 3 */
+	recipe Tie Bundle Of Ripped Sheets {
+		Rope = 1,
+		RippedSheets = 90,
+
+		SkillRequired:Tailoring=3,
+		Result:BundleOfRippedSheets,
+		Time:85.0,
+	}
+
+	recipe Untie Bundle Of Ripped Sheets {
+		BundleOfRippedSheets = 1,
+
+		SkillRequired:Tailoring=3,
+		Result:RippedSheets = 90,
+		OnCreate:Recipe.OnCreate.UnbundleRippedSheets,
+		Time:75.0,
+	}
+
+	recipe Craft Rope {
+		ShortRope = 2,
+
+		SkillRequired:Tailoring=3,
+		Result: Rope,
+		OnGiveXP:Recipe.OnGiveXP.RopeCraft,
+		Time: 120.0,
+	}
+
+	/* Tier 4 */
+	recipe Tie Bundle Of Ripped Sheets {
+		LongRope = 1,
+		RippedSheets = 120,
+
+		SkillRequired:Tailoring=4,
+		Result:BigBundleOfRippedSheets,
+		Time:100.0,
+	}
+
+	recipe Untie Bundle Of Ripped Sheets {
+		BigBundleOfRippedSheets = 1,
+
+		SkillRequired:Tailoring=4,
+		Result:RippedSheets = 120,
+		OnCreate:Recipe.OnCreate.UnbundleRippedSheets,
+		Time:90.0,
+	}
+
+	recipe Craft Long Rope {
+		Rope = 2,
+
+		SkillRequired:Tailoring=4,
+		Result: LongRope,
+		OnGiveXP:Recipe.OnGiveXP.RopeCraft,
+		Time: 120.0,
+	}
+}
