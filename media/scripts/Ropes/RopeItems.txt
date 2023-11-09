@@ -1,0 +1,75 @@
+module SaintsRopes {
+	imports {
+		Base, newitems
+	}
+  
+  /* Tier 1 */
+  item TinyBundleOfRippedSheets {
+    DisplayCategory = Household,
+    Weight	=	0.3,
+		AlwaysWelcomeGift	=	TRUE,
+    Type	=	Normal,
+    DisplayName	=	Tiny Bundle Of Ripped Sheets,
+    Icon	=	TinyRippedSheetsBundle,
+		Tooltip = Tooltip_RippedSheets,
+		FabricType = Cotton,
+  }
+
+  /* Tier 2 */
+  item ShortRope {
+    DisplayCategory = Material,
+    Weight	=	0.15, /* needs 2 SheetRope */
+    Type	=	Normal,
+    DisplayName	=	Rope,
+    Icon	=	ShortRope,
+    SurvivalGear = TRUE,
+    WorldStaticModel = Rope,
+    Tags    =   Rope,
+  }
+
+  item SmallBundleOfRippedSheets {
+    DisplayCategory = Household,
+    Weight	=	0.58,
+		AlwaysWelcomeGift	=	TRUE,
+    Type	=	Normal,
+    DisplayName	=	Small Bundle Of Ripped Sheets,
+    Icon	=	SmallRippedSheetsBundle,
+		Tooltip = Tooltip_RippedSheets,
+		FabricType = Cotton,
+  }
+
+  /* Tier 3 */
+  item BundleOfRippedSheets {
+    DisplayCategory = Household,
+    Weight	=	0.87,
+		AlwaysWelcomeGift	=	TRUE,
+    Type	=	Normal,
+    DisplayName	=	Bundle Of Ripped Sheets,
+    Icon	=	RippedSheetsBundle,
+		Tooltip = Tooltip_RippedSheets,
+		FabricType = Cotton,
+  }
+
+  /* Tier 4 */
+  item BigBundleOfRippedSheets {
+    DisplayCategory = Household,
+    Weight	=	1.2,
+		AlwaysWelcomeGift	=	TRUE,
+    Type	=	Normal,
+    DisplayName	=	Big Bundle Of Ripped Sheets,
+    Icon	=	RippedSheetsBundle,
+		Tooltip = Tooltip_RippedSheets,
+		FabricType = Cotton,
+  }
+
+  item LongRope {
+    DisplayCategory = Material,
+    Weight	=	0.6, /* needs 2 Rope */
+    Type	=	Normal,
+    DisplayName	=	Long Rope,
+    Icon	=	LongRope,
+    SurvivalGear = TRUE,
+    WorldStaticModel = Rope,
+    Tags    =   Rope,
+  }
+}
