@@ -1,4 +1,4 @@
-module SaintsRopes {
+module SaintsCrafting {
 	imports {
 		Base, newitems
 	}

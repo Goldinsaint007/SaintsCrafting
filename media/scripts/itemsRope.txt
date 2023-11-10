@@ -1,0 +1,29 @@
+module SaintsCrafting {
+	imports {
+		Base, newitems
+	}
+
+  /* Tier 2 */
+  item ShortRope {
+    DisplayCategory = Material,
+    Weight	=	0.15, /* needs 2 SheetRope */
+    Type	=	Normal,
+    DisplayName	=	Rope,
+    Icon	=	ShortRope,
+    SurvivalGear = TRUE,
+    WorldStaticModel = Rope,
+    Tags    =   Rope,
+  }
+
+  /* Tier 4 */
+  item LongRope {
+    DisplayCategory = Material,
+    Weight	=	0.6, /* needs 2 Rope */
+    Type	=	Normal,
+    DisplayName	=	Long Rope,
+    Icon	=	LongRope,
+    SurvivalGear = TRUE,
+    WorldStaticModel = Rope,
+    Tags    =   Rope,
+  }
+}
