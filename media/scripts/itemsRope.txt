@@ -8,7 +8,7 @@ module SaintsCrafting {
     DisplayCategory = Material,
     Weight	=	0.15, /* needs 2 SheetRope */
     Type	=	Normal,
-    DisplayName	=	Rope,
+    DisplayName	=	Short Rope,
     Icon	=	ShortRope,
     SurvivalGear = TRUE,
     WorldStaticModel = Rope,
